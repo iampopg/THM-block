@@ -48,28 +48,15 @@ This script takes a session ID found in a PCAP file and reverses it, producing t
 Simply run the script with the session ID:
 
 ```
-python reversed_session_id.py -
+python reversed_session_id.py 
 ```
 This will output the reversed session ID needed for decryption.
 
-## Example Workflow
-Reverse the Session ID:
+## Credit
 
-First, reverse the session ID using reversed_session_id.py.
-Calculate the Session Key:
-
-Use random_smb_session_key.py with either the NTLM hash or password and other required parameters to obtain the session key.
-Decrypt SMB3 Traffic in Wireshark:
-
-Use the session key and the reversed session ID to decrypt SMB3 traffic in Wireshark.
-This toolkit provides a straightforward method for decrypting SMB3 traffic using a combination of session key extraction and session ID reversal. Ensure all dependencies are installed and the necessary arguments are correctly provided when running the scripts.
-
-go
-Copy code
-
-You can now copy and paste the entire content directly into your `README.md` file.
-
-
+Original scripts and inspiration:
+- [Decrypting SMB3 Traffic with Just a PCAP (Absolutely Maybe)](https://medium.com/maverislabs/decrypting-smb3-traffic-with-just-a-pcap-absolutely-maybe-712ed23ff6a2) 
+- [djalilayed's GitHub Repository](https://github.com/djalilayed/)
 
 
 
