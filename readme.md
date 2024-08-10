@@ -13,7 +13,7 @@ This toolkit consists of two Python scripts designed to assist in decrypting SMB
 Install dependencies using pip:
 
 ```bash
-pip install pycryptodome
+pip install pycryptodomex
 ```
 
 ## random_smb_session_key.py
@@ -30,13 +30,13 @@ This script calculates the session key required to decrypt SMB3 traffic. It supp
 
 ## Usage 
 ### Calculate the session key using NTLM hash
-```
+```bash
 python random_smb_session_key.py -u {username} -d {domain} -m {password ntlm hash} -n {ntproofstr key} -k {encrypted session key}
 
 ```
 
 ### Calculate the session key using the Password:
-```
+```bash
 python random_smb_session_key.py -u {username} -d {domain} -p {MyPassword123} -n { key} -k {encrypted session key}
 
 ```
@@ -47,7 +47,7 @@ This script takes a session ID found in a PCAP file and reverses it, producing t
 # Usage
 Simply run the script with the session ID:
 
-```
+```bash
 python reversed_session_id.py 
 ```
 This will output the reversed session ID needed for decryption.
