@@ -55,7 +55,7 @@ This will output the reversed session ID needed for decryption.
 ## Credit
 
 Original scripts and inspiration:
-- [Decrypting SMB3 Traffic with Just a PCAP (Absolutely Maybe)](https://medium.com/maverislabs/decrypting-smb3-traffic-with-just-a-pcap-absolutely-maybe-712ed23ff6a2) 
+- [Decrypting SMB3 Traffic with a PCAP ](https://medium.com/maverislabs/decrypting-smb3-traffic-with-just-a-pcap-absolutely-maybe-712ed23ff6a2) 
 - [djalilayed's GitHub Repository](https://github.com/djalilayed/)
 
 
